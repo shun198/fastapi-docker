@@ -1,4 +1,5 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+# FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM python:3
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 WORKDIR /code
