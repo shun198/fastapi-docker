@@ -8,12 +8,11 @@
             "name": "fastapi container",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
+            "module": "uvicorn",
+            //"program": "${workspaceFolder}/main.py",
             "args": [
-                "runserver",
-                "0.0.0.0:8080"
+                "main:app","--reload","--port=8080","--host=0.0.0.0"
             ],
-            "django": true,
         }
     ]
 }
